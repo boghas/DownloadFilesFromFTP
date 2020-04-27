@@ -12,9 +12,13 @@ How it works:
 Example on how to run the script:
 
 ftps = FTPServer(server, user, password)
+
 connection = ftps.connect()
+
 ftps.downloadFiles(connection)
+
 recipients = ftps.getEmailRecipients(file_with_emails)
+
 
 The file_with_emails looks like this:
 
